@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-import './App.css';
-
+import Recipe from './components/Recipe'
+import RecipeDetails from './components/RecipeDetails';
+import RecipeList from './components/RecipeList';
+import RecipeSearch from './components/RecipeSearch';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      Hello Treek
-      </div>
-    );
+      <React.Fragment>
+      Hello Treek {" "}
+
+      <Recipe />{" "}
+      <RecipeDetails />{"    "}
+      <RecipeList />{" "}
+      <RecipeSearch />{" "}
+      </React.Fragment>
+    )
   }
 }
 
