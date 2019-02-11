@@ -12,10 +12,11 @@ import RecipeSearch from './components/RecipeSearch';
 class App extends Component {
    state ={
      recipes:recipes,
-     url:"https://www.food2fork.com/api/search?key=983abcc4a754078ed066d108ce6d0b21"
+     url:"https://www.food2fork.com/api/search?key=983abcc4a754078ed066d108ce6d0b21",
+     details_id:35382
    };
 
-   /*async getRecipes(){
+  /* async getRecipes(){
     try{
     const data = await fetch(this.state.url);
     const jsonData = await data.json();
@@ -31,8 +32,8 @@ class App extends Component {
    componentDidMount(){
       this.getRecipes()
    }
-
 */
+
   render() {
     console.log(this.state.recipes);
 
@@ -40,8 +41,8 @@ class App extends Component {
       <React.Fragment>
       Hello Treek {" "}
 
-      <RecipeList  recipes ={this.state.recipes}/>{" "}
-      <RecipeDetails />
+      {/*<RecipeList  recipes ={this.state.recipes}/>{" "}*/}
+      <RecipeDetails id={this.state.details_id}/>
  
       </React.Fragment>
     )

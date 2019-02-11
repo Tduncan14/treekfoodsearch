@@ -29,9 +29,7 @@ class RecipeDetails extends Component {
           }
           </div>
           </div>
-
-          <Recipe />
-
+          
         </React.Fragment>
         )
     }
