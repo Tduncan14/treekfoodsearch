@@ -13,10 +13,11 @@ class App extends Component {
    state ={
      recipes:recipes,
      url:"https://www.food2fork.com/api/search?key=983abcc4a754078ed066d108ce6d0b21",
-     details_id:35382
+     details_id:35387
+
    };
 
-  /* async getRecipes(){
+   /*async getRecipes(){
     try{
     const data = await fetch(this.state.url);
     const jsonData = await data.json();
@@ -39,8 +40,7 @@ class App extends Component {
 
     return (
       <React.Fragment>
-      Hello Treek {" "}
-
+     
       {/*<RecipeList  recipes ={this.state.recipes}/>{" "}*/}
       <RecipeDetails id={this.state.details_id}/>
  
