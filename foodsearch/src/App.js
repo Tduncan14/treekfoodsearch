@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import "./App.css";
+// Temporay so api limit won't be reached
+//keep moving forward
+import{recipes} from './tempList';
+import{recipe} from './tempDetails';
+/// Temporay stuff ends
 import Recipe from './components/Recipe'
 import RecipeDetails from './components/RecipeDetails';
 import RecipeList from './components/RecipeList';
@@ -9,10 +15,9 @@ class App extends Component {
       <React.Fragment>
       Hello Treek {" "}
 
-      <Recipe />{" "}
-      <RecipeDetails />{"    "}
       <RecipeList />{" "}
-      <RecipeSearch />{" "}
+      <RecipeDetails />
+ 
       </React.Fragment>
     )
   }

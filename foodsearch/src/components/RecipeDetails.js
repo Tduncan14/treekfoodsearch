@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import {recipe} from '../tempDetails';
 
 class RecipeDetails extends Component{
 
@@ -7,7 +7,7 @@ class RecipeDetails extends Component{
 
         return( 
             <React.Fragment>
-                Keep moving for Treek
+             <h2>   Keep moving for Treek from details</h2> ]
             </React.Fragment>
         )
     }
