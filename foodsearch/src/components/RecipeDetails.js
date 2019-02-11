@@ -12,7 +12,7 @@ class RecipeDetails extends Component{
     }
   
 
-  async componentDidMount(){
+ /* async componentDidMount(){
 
     try{
         const data = await fetch(this.state.url);
@@ -25,7 +25,7 @@ class RecipeDetails extends Component{
         }
   
    }
-
+*/
 
     render(){
          console.log(this.state.recipe);
@@ -35,11 +35,11 @@ class RecipeDetails extends Component{
             <React.Fragment>
               <div className ="container">
               <div className ="row">
-              <div className ="col-10 mx-auto col-6 my-3">
+              <div className ="col-10 mx-auto col-md-6 my-3">
               <button type="button" className="btn-warning mb-5 text-capitalize rounded">
                Back To List
               </button>
-              <img src={image_url} className="d-block w-100" alt="food" />
+              <img src={image_url} className="d-block w-10" alt="food" />
               </div>
               {/*details section */}
                <div className ="col-10 mx-auto col-md-6 my-3">
@@ -50,8 +50,8 @@ class RecipeDetails extends Component{
                   <a href={publisher_url} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-2 text-capitalize">Publisher Webpage</a>
                   
                   <a href={source_url} target="_blank" rel="noopener noreferrer" className="btn btn-success mt-2 text-capitalize mx-3">Source url</a>
-                </div>
-                <ul className="list-group mt-4">
+               
+                  <ul className="list-group mt-4">
                 <h2 className="mt-3 mb-4">ingredients</h2>
                 {
                     ingredients.map((item,index)=>{
@@ -60,6 +60,8 @@ class RecipeDetails extends Component{
                 }
 
                 </ul>
+                </div>
+               
                 </div>
               </div>
             </React.Fragment>
