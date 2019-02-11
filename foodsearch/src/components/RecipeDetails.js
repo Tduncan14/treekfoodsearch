@@ -7,7 +7,7 @@ class RecipeDetails extends Component{
 
         return( 
             <React.Fragment>
-             <h2>   Keep moving for Treek from details</h2> ]
+             <h2>   Keep moving for Treek from details</h2> 
             </React.Fragment>
         )
     }
