@@ -28,8 +28,12 @@ export default class RecipeList extends Component {
             </div>
           </div>
           {/* end of title */}
+        
           <div className="row">
-       {
+          <div className="row">
+            {error ? (
+              <h1 className="text-danger text-center">{error}</h1>
+            ) : (
               recipes.map(recipe => {
                 return (
                   <Recipe
@@ -39,7 +43,8 @@ export default class RecipeList extends Component {
                   />
                 );
               })
-          }
+            )}
+          </div>
           </div>
         </div>
       </React.Fragment>
