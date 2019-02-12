@@ -24,11 +24,12 @@ class Recipe extends Component{
                <h6 className="text-slanted text-warning">provided by: {publisher}</h6>
             </div>
              <div className="card-footer">
-            <button type="button" className="btn btn-primary text-capitalize" onClick={handleDetails =>(0,recipe_id)}>details</button>
-            <a target="_blank" href={source_url} className="btn btn-success mx-2 text-capitalize"
-            rel="noopener noreferrer">
-              Recipe Url
-            </a>
+
+                <button type="button" className="btn btn-primary text-capitalize" onClick={()=>handleDetails(0,recipe_id)}>details</button>
+                <a target="_blank" href={source_url} className="btn btn-success mx-2 text-capitalize"
+                 rel="noopener noreferrer">
+                    Recipe Url
+                 </a>
             </div>
             
             </div>

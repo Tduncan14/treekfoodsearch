@@ -14,7 +14,7 @@ class App extends Component {
      recipes:recipes,
      url:"https://www.food2fork.com/api/search?key=983abcc4a754078ed066d108ce6d0b21",
      details_id:35380,
-     pageIndex:0
+     pageIndex:1
 
    };
 
@@ -31,9 +31,9 @@ class App extends Component {
     
    } 
 
-   componentDidMount(){
-      this.getRecipes()
-   }
+ /*componentDidMount(){
+   this.getRecipes()
+   }*/
 
   
    displayPage =(index)=>{
